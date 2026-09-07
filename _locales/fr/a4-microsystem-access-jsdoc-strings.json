@@ -1,0 +1,21 @@
+{
+  "a4MicroSystemAccess.DoorState": "États de la porte indiqués par le microrupteur.",
+  "a4MicroSystemAccess.DoorSensorLevel": "Niveaux électriques utilisés pour configurer le capteur de porte.",
+  "a4MicroSystemAccess.lockDoor": "Verrouille la porte en alimentant la ventouse magnétique reliée à C0.",
+  "a4MicroSystemAccess.unlockDoor": "Déverrouille la porte en coupant l'alimentation de la ventouse magnétique reliée à C0.",
+  "a4MicroSystemAccess.doorIs": "Renvoie vrai lorsque la porte se trouve dans l'état sélectionné.",
+  "a4MicroSystemAccess.doorIs|param|state": "état de la porte à tester",
+  "a4MicroSystemAccess.initializeKeypad": "Initialise le clavier capacitif relié à P14 et P15. Le clavier utilise le port série de la micro:bit à 9 600 bauds.",
+  "a4MicroSystemAccess.keyAvailable": "Renvoie vrai lorsqu'au moins une touche du clavier attend d'être lue.",
+  "a4MicroSystemAccess.readKey": "Renvoie la plus ancienne touche non lue, ou un texte vide si aucune touche n'est disponible.",
+  "a4MicroSystemAccess.waitForKey": "Attend la prochaine touche du clavier et la renvoie.",
+  "a4MicroSystemAccess.onKeyPressed": "Exécute le code lorsqu'une touche valide du clavier est appuyée.",
+  "a4MicroSystemAccess.onKeyPressed|param|handler": "code à exécuter ; touche contient le caractère appuyé",
+  "a4MicroSystemAccess.getEnteredCode": "Renvoie les chiffres saisis depuis le dernier effacement. La touche étoile efface le code et la touche dièse n'est pas ajoutée.",
+  "a4MicroSystemAccess.clearEnteredCode": "Efface tous les chiffres du code d'accès saisi.",
+  "a4MicroSystemAccess.enteredCodeIs": "Renvoie vrai lorsque le code d'accès saisi correspond au code indiqué.",
+  "a4MicroSystemAccess.enteredCodeIs|param|code": "code d'accès à comparer",
+  "a4MicroSystemAccess.deleteLastCharacter": "Efface le dernier chiffre du code d'accès saisi.",
+  "a4MicroSystemAccess.setDoorClosedLevel": "Définit le niveau électrique produit par le capteur lorsque la porte est fermée. Le niveau par défaut de microSySTEM-Access est haut.",
+  "a4MicroSystemAccess.setDoorClosedLevel|param|level": "niveau électrique correspondant à la porte fermée"
+}

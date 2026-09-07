@@ -1,0 +1,43 @@
+{
+    "name": "a4-microsystem-access",
+    "version": "1.0.0",
+    "description": "MakeCode extension for the A4 Technologie microSySTEM-Access educational access-control model: magnetic door lock, door sensor and capacitive keypad for BBC micro:bit.",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "access.ts",
+        "_locales/a4-microsystem-access-strings.json",
+        "_locales/a4-microsystem-access-jsdoc-strings.json",
+        "_locales/fr/a4-microsystem-access-strings.json",
+        "_locales/fr/a4-microsystem-access-jsdoc-strings.json",
+        "TESTING.md",
+        "docs/lock-door.md",
+        "docs/unlock-door.md",
+        "docs/door-is.md",
+        "docs/initialize-keypad.md",
+        "docs/key-available.md",
+        "docs/read-key.md",
+        "docs/wait-for-key.md",
+        "docs/on-key-pressed.md",
+        "docs/entered-code.md",
+        "docs/clear-entered-code.md",
+        "docs/entered-code-is.md",
+        "docs/delete-last-character.md",
+        "docs/set-door-closed-level.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "8.0.22",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}

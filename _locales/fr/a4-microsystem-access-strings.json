@@ -1,0 +1,21 @@
+{
+  "a4MicroSystemAccess.DoorState.Closed|block": "fermée",
+  "a4MicroSystemAccess.DoorState.Open|block": "ouverte",
+  "a4MicroSystemAccess.DoorSensorLevel.Low|block": "bas",
+  "a4MicroSystemAccess.DoorSensorLevel.High|block": "haut",
+  "a4MicroSystemAccess.lockDoor|block": "verrouiller la porte",
+  "a4MicroSystemAccess.unlockDoor|block": "déverrouiller la porte",
+  "a4MicroSystemAccess.doorIs|block": "la porte est %state",
+  "a4MicroSystemAccess.initializeKeypad|block": "initialiser le clavier",
+  "a4MicroSystemAccess.keyAvailable|block": "une touche du clavier est disponible",
+  "a4MicroSystemAccess.readKey|block": "lire une touche du clavier",
+  "a4MicroSystemAccess.waitForKey|block": "attendre une touche du clavier",
+  "a4MicroSystemAccess.onKeyPressed|block": "lorsqu'une touche du clavier est appuyée",
+  "a4MicroSystemAccess.getEnteredCode|block": "code saisi",
+  "a4MicroSystemAccess.clearEnteredCode|block": "effacer le code saisi",
+  "a4MicroSystemAccess.enteredCodeIs|block": "le code saisi est %code",
+  "a4MicroSystemAccess.deleteLastCharacter|block": "effacer le dernier chiffre du code",
+  "a4MicroSystemAccess.setDoorClosedLevel|block": "régler le niveau porte fermée sur %level",
+  "a4MicroSystemAccess|block": "A4 microSySTEM Access",
+  "{id:category}a4MicroSystemAccess": "A4 microSySTEM Access"
+}
