@@ -31,6 +31,16 @@ namespace a4MicroSystemAccess {
         Open
     }
 
+    /**
+     * Available states for the magnetic door lock.
+     */
+    export enum DoorLockState {
+        //% block="locked"
+        Locked,
+        //% block="unlocked"
+        Unlocked
+    }
+
     function writeDfrRegister(registerAddress: number, value: number): void {
         const buffer = pins.createBuffer(2)
         buffer[0] = registerAddress
@@ -92,27 +102,16 @@ namespace a4MicroSystemAccess {
     }
 
     /**
-     * Locks the door by energizing the magnetic lock connected to C0.
+     * Sets the magnetic door lock connected to C0 to the selected state.
+     * @param state magnetic door lock state
      */
-    //% blockId=a4_access_lock_door
-    //% help=github:a4-microsystem-access/docs/lock-door
-    //% block="lock door"
+    //% blockId=a4_access_set_door_lock
+    //% help=github:a4-microsystem-access/docs/set-door-lock
+    //% block="set door lock to %state"
     //% group="Magnetic lock"
     //% weight=100
-    export function lockDoor(): void {
-        writeLockOutput(1)
-    }
-
-    /**
-     * Unlocks the door by switching off the magnetic lock connected to C0.
-     */
-    //% blockId=a4_access_unlock_door
-    //% help=github:a4-microsystem-access/docs/unlock-door
-    //% block="unlock door"
-    //% group="Magnetic lock"
-    //% weight=90
-    export function unlockDoor(): void {
-        writeLockOutput(0)
+    export function setDoorLock(state: DoorLockState): void {
+        writeLockOutput(state == DoorLockState.Locked ? 1 : 0)
     }
 
     /**

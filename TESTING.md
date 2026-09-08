@@ -29,7 +29,7 @@ Import the repository into MakeCode and download the included `test.ts` program.
 
 ## Pass criteria
 
-- both lock commands operate C0 in the correct direction;
+- both choices of the door lock block operate C0 in the correct direction;
 - the sensor reliably distinguishes the open and closed door states;
 - all 12 keypad characters are decoded correctly at 9600 baud;
 - the keypad event supplies the correct character;

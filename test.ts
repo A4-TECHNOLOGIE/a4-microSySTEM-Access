@@ -1,15 +1,15 @@
 let lastTestKey = ""
 
 a4MicroSystemAccess.initializeKeypad()
-a4MicroSystemAccess.lockDoor()
+a4MicroSystemAccess.setDoorLock(a4MicroSystemAccess.DoorLockState.Locked)
 
 input.onButtonPressed(Button.A, function () {
-    a4MicroSystemAccess.unlockDoor()
+    a4MicroSystemAccess.setDoorLock(a4MicroSystemAccess.DoorLockState.Unlocked)
     basic.showIcon(IconNames.Yes)
 })
 
 input.onButtonPressed(Button.B, function () {
-    a4MicroSystemAccess.lockDoor()
+    a4MicroSystemAccess.setDoorLock(a4MicroSystemAccess.DoorLockState.Locked)
     basic.showIcon(IconNames.No)
 })
 

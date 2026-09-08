@@ -68,8 +68,8 @@ https://github.com/A4-TECHNOLOGIE/a4-microSySTEM-Access
 ### Magnetic lock
 
 ```typescript
-a4MicroSystemAccess.lockDoor()
-a4MicroSystemAccess.unlockDoor()
+a4MicroSystemAccess.setDoorLock(a4MicroSystemAccess.DoorLockState.Locked)
+a4MicroSystemAccess.setDoorLock(a4MicroSystemAccess.DoorLockState.Unlocked)
 ```
 
 The magnetic lock is connected to C0. It is powered to lock the door and switched off to release it.
@@ -128,14 +128,14 @@ if (a4MicroSystemAccess.enteredCodeIs("1234")) {
 This program keeps the door locked. Enter `1234#` to release it. The door locks again after it has been opened and then closed.
 
 ```typescript
-a4MicroSystemAccess.lockDoor()
+a4MicroSystemAccess.setDoorLock(a4MicroSystemAccess.DoorLockState.Locked)
 a4MicroSystemAccess.initializeKeypad()
 
 a4MicroSystemAccess.onKeyPressed(function (key) {
     if (key == "#") {
         if (a4MicroSystemAccess.enteredCodeIs("1234")) {
             basic.showIcon(IconNames.Yes)
-            a4MicroSystemAccess.unlockDoor()
+            a4MicroSystemAccess.setDoorLock(a4MicroSystemAccess.DoorLockState.Unlocked)
 
             while (a4MicroSystemAccess.doorIs(a4MicroSystemAccess.DoorState.Closed)) {
                 basic.pause(50)
@@ -145,7 +145,7 @@ a4MicroSystemAccess.onKeyPressed(function (key) {
                 basic.pause(50)
             }
 
-            a4MicroSystemAccess.lockDoor()
+            a4MicroSystemAccess.setDoorLock(a4MicroSystemAccess.DoorLockState.Locked)
         } else {
             basic.showIcon(IconNames.No)
         }

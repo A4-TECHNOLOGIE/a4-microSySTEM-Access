@@ -1,7 +1,9 @@
 {
+  "a4MicroSystemAccess": "Extension MakeCode pour la maquette microSySTEM-Access d'A4 Technologie.",
+  "a4MicroSystemAccess.DoorLockState": "États disponibles pour la ventouse magnétique de la porte.",
   "a4MicroSystemAccess.DoorState": "États de la porte indiqués par le microrupteur.",
-  "a4MicroSystemAccess.lockDoor": "Verrouille la porte en alimentant la ventouse magnétique reliée à C0.",
-  "a4MicroSystemAccess.unlockDoor": "Déverrouille la porte en coupant l'alimentation de la ventouse magnétique reliée à C0.",
+  "a4MicroSystemAccess.setDoorLock": "Place la ventouse magnétique reliée à C0 dans l'état sélectionné.",
+  "a4MicroSystemAccess.setDoorLock|param|state": "état de verrouillage de la porte",
   "a4MicroSystemAccess.doorIs": "Renvoie vrai lorsque la porte se trouve dans l'état sélectionné.",
   "a4MicroSystemAccess.doorIs|param|state": "état de la porte à tester",
   "a4MicroSystemAccess.initializeKeypad": "Initialise le clavier capacitif relié à P14 et P15. Le clavier utilise le port série de la micro:bit à 9 600 bauds.",

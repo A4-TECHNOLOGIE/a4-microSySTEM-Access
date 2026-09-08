@@ -1,5 +1,6 @@
 {
   "a4MicroSystemAccess": "MakeCode extension for the A4 Technologie microSySTEM-Access model.",
+  "a4MicroSystemAccess.DoorLockState": "Available states for the magnetic door lock.",
   "a4MicroSystemAccess.DoorState": "Door states reported by the microswitch.",
   "a4MicroSystemAccess.clearEnteredCode": "Clears all digits from the entered access code.",
   "a4MicroSystemAccess.deleteLastCharacter": "Deletes the last digit from the entered access code.",
@@ -11,9 +12,9 @@
   "a4MicroSystemAccess.enteredCodeIs|param|code": "access code to compare, eg: \"1234\"",
   "a4MicroSystemAccess.getEnteredCode": "Returns the digits entered since the code was last cleared.\nThe star key clears the code and the hash key is not appended.",
   "a4MicroSystemAccess.initializeKeypad": "Initializes the capacitive keypad connected to P14 and P15.\nThe keypad uses the micro:bit serial port at 9600 baud.",
-  "a4MicroSystemAccess.lockDoor": "Locks the door by energizing the magnetic lock connected to C0.",
   "a4MicroSystemAccess.onKeyPressed": "Runs code whenever a valid keypad key is pressed.",
   "a4MicroSystemAccess.onKeyPressed|param|handler": "code to run; key is the pressed character",
-  "a4MicroSystemAccess.unlockDoor": "Unlocks the door by switching off the magnetic lock connected to C0.",
+  "a4MicroSystemAccess.setDoorLock": "Sets the magnetic door lock connected to C0 to the selected state.",
+  "a4MicroSystemAccess.setDoorLock|param|state": "magnetic door lock state",
   "a4MicroSystemAccess.waitForKey": "Waits for the next keypad key and returns it."
 }
