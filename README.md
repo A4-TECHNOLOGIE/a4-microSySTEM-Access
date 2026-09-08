@@ -86,12 +86,10 @@ Returns `true` when the door matches the selected open or closed state.
 
 ```typescript
 a4MicroSystemAccess.initializeKeypad()
-a4MicroSystemAccess.keyAvailable()
-a4MicroSystemAccess.readKey()
 a4MicroSystemAccess.waitForKey()
 ```
 
-`readKey()` is non-blocking and returns an empty string if no unread key is available. `waitForKey()` pauses the current program flow until a key is received.
+`waitForKey()` pauses the current program flow until a key is received.
 
 The event block provides the pressed character directly:
 

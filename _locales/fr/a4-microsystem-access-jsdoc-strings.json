@@ -5,8 +5,6 @@
   "a4MicroSystemAccess.doorIs": "Renvoie vrai lorsque la porte se trouve dans l'état sélectionné.",
   "a4MicroSystemAccess.doorIs|param|state": "état de la porte à tester",
   "a4MicroSystemAccess.initializeKeypad": "Initialise le clavier capacitif relié à P14 et P15. Le clavier utilise le port série de la micro:bit à 9 600 bauds.",
-  "a4MicroSystemAccess.keyAvailable": "Renvoie vrai lorsqu'au moins une touche du clavier attend d'être lue.",
-  "a4MicroSystemAccess.readKey": "Renvoie la plus ancienne touche non lue, ou un texte vide si aucune touche n'est disponible.",
   "a4MicroSystemAccess.waitForKey": "Attend la prochaine touche du clavier et la renvoie.",
   "a4MicroSystemAccess.onKeyPressed": "Exécute le code lorsqu'une touche valide du clavier est appuyée.",
   "a4MicroSystemAccess.onKeyPressed|param|handler": "code à exécuter ; touche contient le caractère appuyé",

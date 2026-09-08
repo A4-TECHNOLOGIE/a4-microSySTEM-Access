@@ -5,8 +5,6 @@
   "a4MicroSystemAccess.unlockDoor|block": "déverrouiller la porte",
   "a4MicroSystemAccess.doorIs|block": "la porte est %state",
   "a4MicroSystemAccess.initializeKeypad|block": "initialiser le clavier",
-  "a4MicroSystemAccess.keyAvailable|block": "une touche du clavier est disponible",
-  "a4MicroSystemAccess.readKey|block": "lire une touche du clavier",
   "a4MicroSystemAccess.waitForKey|block": "attendre une touche du clavier",
   "a4MicroSystemAccess.onKeyPressed|block": "lorsqu'une touche du clavier est appuyée",
   "a4MicroSystemAccess.getEnteredCode|block": "code saisi",

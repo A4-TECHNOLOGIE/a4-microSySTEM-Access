@@ -31,7 +31,6 @@ Import the repository into MakeCode and download the included `test.ts` program.
 - both lock commands operate C0 in the correct direction;
 - the sensor reliably distinguishes the open and closed door states;
 - all 12 keypad characters are decoded correctly at 9600 baud;
-- non-blocking key reads leave the main loop responsive;
 - the keypad event supplies the correct character;
 - code entry, comparison, clearing and last-digit deletion behave as documented;
 - no simulator exception occurs when the hardware is absent.

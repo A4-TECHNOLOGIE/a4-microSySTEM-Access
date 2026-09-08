@@ -9,11 +9,9 @@
   "a4MicroSystemAccess.enteredCodeIs|param|code": "access code to compare, eg: \"1234\"",
   "a4MicroSystemAccess.getEnteredCode": "Returns the digits entered since the code was last cleared.\nThe star key clears the code and the hash key is not appended.",
   "a4MicroSystemAccess.initializeKeypad": "Initializes the capacitive keypad connected to P14 and P15.\nThe keypad uses the micro:bit serial port at 9600 baud.",
-  "a4MicroSystemAccess.keyAvailable": "Returns true when at least one keypad key is waiting to be read.",
   "a4MicroSystemAccess.lockDoor": "Locks the door by energizing the magnetic lock connected to C0.",
   "a4MicroSystemAccess.onKeyPressed": "Runs code whenever a valid keypad key is pressed.",
   "a4MicroSystemAccess.onKeyPressed|param|handler": "code to run; key is the pressed character",
-  "a4MicroSystemAccess.readKey": "Returns the oldest unread keypad key, or an empty string when none is available.",
   "a4MicroSystemAccess.unlockDoor": "Unlocks the door by switching off the magnetic lock connected to C0.",
   "a4MicroSystemAccess.waitForKey": "Waits for the next keypad key and returns it."
 }

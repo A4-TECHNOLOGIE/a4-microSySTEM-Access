@@ -18,8 +18,6 @@
         "docs/unlock-door.md",
         "docs/door-is.md",
         "docs/initialize-keypad.md",
-        "docs/key-available.md",
-        "docs/read-key.md",
         "docs/wait-for-key.md",
         "docs/on-key-pressed.md",
         "docs/entered-code.md",

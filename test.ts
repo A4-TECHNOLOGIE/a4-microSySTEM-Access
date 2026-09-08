@@ -39,13 +39,6 @@ input.onGesture(Gesture.Shake, function () {
     basic.showString(a4MicroSystemAccess.getEnteredCode())
 })
 
-basic.forever(function () {
-    if (a4MicroSystemAccess.keyAvailable()) {
-        lastTestKey = a4MicroSystemAccess.readKey()
-    }
-    basic.pause(20)
-})
-
 // Compile-only coverage for the blocking function.
 if (false) {
     lastTestKey = a4MicroSystemAccess.waitForKey()

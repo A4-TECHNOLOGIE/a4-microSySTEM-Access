@@ -153,40 +153,13 @@ namespace a4MicroSystemAccess {
     }
 
     /**
-     * Returns true when at least one keypad key is waiting to be read.
-     */
-    //% blockId=a4_access_key_available
-    //% help=github:a4-microsystem-access/docs/key-available
-    //% block="keypad key available"
-    //% group="Keypad"
-    //% weight=90
-    export function keyAvailable(): boolean {
-        initializeKeypad()
-        return keyQueue.length > 0
-    }
-
-    /**
-     * Returns the oldest unread keypad key, or an empty string when none is available.
-     */
-    //% blockId=a4_access_read_key
-    //% help=github:a4-microsystem-access/docs/read-key
-    //% block="read keypad key"
-    //% group="Keypad"
-    //% weight=80
-    export function readKey(): string {
-        initializeKeypad()
-        if (keyQueue.length == 0) return ""
-        return keyQueue.shift()
-    }
-
-    /**
      * Waits for the next keypad key and returns it.
      */
     //% blockId=a4_access_wait_for_key
     //% help=github:a4-microsystem-access/docs/wait-for-key
     //% block="wait for keypad key"
     //% group="Keypad"
-    //% weight=70
+    //% weight=90
     export function waitForKey(): string {
         initializeKeypad()
         while (keyQueue.length == 0) basic.pause(20)
