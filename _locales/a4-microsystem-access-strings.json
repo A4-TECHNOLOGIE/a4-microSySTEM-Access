@@ -1,6 +1,4 @@
 {
-  "a4MicroSystemAccess.DoorSensorLevel.High|block": "high",
-  "a4MicroSystemAccess.DoorSensorLevel.Low|block": "low",
   "a4MicroSystemAccess.DoorState.Closed|block": "closed",
   "a4MicroSystemAccess.DoorState.Open|block": "open",
   "a4MicroSystemAccess.clearEnteredCode|block": "clear entered code",
@@ -15,13 +13,11 @@
   "a4MicroSystemAccess.onKeyPressed|block": "on keypad key pressed",
   "a4MicroSystemAccess.onKeyPressed|handlerParam|key": "key",
   "a4MicroSystemAccess.readKey|block": "read keypad key",
-  "a4MicroSystemAccess.setDoorClosedLevel|block": "set closed-door sensor level to %level",
   "a4MicroSystemAccess.unlockDoor|block": "unlock door",
   "a4MicroSystemAccess.waitForKey|block": "wait for keypad key",
   "a4MicroSystemAccess|block": "A4 microSySTEM Access",
   "{id:category}A4MicroSystemAccess": "A4MicroSystemAccess",
   "{id:group}Access code": "Access code",
-  "{id:group}Advanced": "Advanced",
   "{id:group}Door sensor": "Door sensor",
   "{id:group}Keypad": "Keypad",
   "{id:group}Magnetic lock": "Magnetic lock"

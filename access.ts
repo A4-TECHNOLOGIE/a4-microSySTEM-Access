@@ -2,7 +2,7 @@
  * MakeCode extension for the A4 Technologie microSySTEM-Access model.
  */
 //% weight=100 color=#00838F icon="\uf084" block="A4 microSySTEM Access"
-//% groups='["Magnetic lock", "Door sensor", "Keypad", "Access code", "Advanced"]'
+//% groups='["Magnetic lock", "Door sensor", "Keypad", "Access code"]'
 namespace a4MicroSystemAccess {
     const dfrAddress = 0x33
     const c0ModeRegister = 0x2C
@@ -19,7 +19,7 @@ namespace a4MicroSystemAccess {
     let keypadEventSource = 0
     let keyQueue: string[] = []
     let enteredCode = ""
-    let doorClosedLevel = 1
+    const doorClosedLevel = 0
 
     /**
      * Door states reported by the microswitch.
@@ -29,16 +29,6 @@ namespace a4MicroSystemAccess {
         Closed,
         //% block="open"
         Open
-    }
-
-    /**
-     * Electrical levels used to configure the door sensor.
-     */
-    export enum DoorSensorLevel {
-        //% block="low"
-        Low = 0,
-        //% block="high"
-        High = 1
     }
 
     function writeDfrRegister(registerAddress: number, value: number): void {
@@ -275,18 +265,4 @@ namespace a4MicroSystemAccess {
         }
     }
 
-    /**
-     * Sets the electrical level produced by the sensor when the door is closed.
-     * The microSySTEM-Access default is high.
-     * @param level electrical level for a closed door
-     */
-    //% blockId=a4_access_set_door_closed_level
-    //% help=github:a4-microsystem-access/docs/set-door-closed-level
-    //% block="set closed-door sensor level to %level"
-    //% group="Advanced"
-    //% advanced=true
-    //% weight=100
-    export function setDoorClosedLevel(level: DoorSensorLevel): void {
-        doorClosedLevel = level
-    }
 }

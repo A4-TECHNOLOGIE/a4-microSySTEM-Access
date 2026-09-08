@@ -1,6 +1,5 @@
 {
   "a4MicroSystemAccess": "MakeCode extension for the A4 Technologie microSySTEM-Access model.",
-  "a4MicroSystemAccess.DoorSensorLevel": "Electrical levels used to configure the door sensor.",
   "a4MicroSystemAccess.DoorState": "Door states reported by the microswitch.",
   "a4MicroSystemAccess.clearEnteredCode": "Clears all digits from the entered access code.",
   "a4MicroSystemAccess.deleteLastCharacter": "Deletes the last digit from the entered access code.",
@@ -15,8 +14,6 @@
   "a4MicroSystemAccess.onKeyPressed": "Runs code whenever a valid keypad key is pressed.",
   "a4MicroSystemAccess.onKeyPressed|param|handler": "code to run; key is the pressed character",
   "a4MicroSystemAccess.readKey": "Returns the oldest unread keypad key, or an empty string when none is available.",
-  "a4MicroSystemAccess.setDoorClosedLevel": "Sets the electrical level produced by the sensor when the door is closed.\nThe microSySTEM-Access default is high.",
-  "a4MicroSystemAccess.setDoorClosedLevel|param|level": "electrical level for a closed door",
   "a4MicroSystemAccess.unlockDoor": "Unlocks the door by switching off the magnetic lock connected to C0.",
   "a4MicroSystemAccess.waitForKey": "Waits for the next keypad key and returns it."
 }

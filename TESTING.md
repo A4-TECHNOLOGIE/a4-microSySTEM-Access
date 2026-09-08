@@ -36,4 +36,4 @@ Import the repository into MakeCode and download the included `test.ts` program.
 - code entry, comparison, clearing and last-digit deletion behave as documented;
 - no simulator exception occurs when the hardware is absent.
 
-If the door states are reversed on a hardware revision, use the advanced `set closed-door sensor level` block and repeat steps 4 and 5.
+The production model tested by A4 Technologie returns a low level on P0 when the door is closed.

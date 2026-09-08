@@ -46,8 +46,7 @@ basic.forever(function () {
     basic.pause(20)
 })
 
-// Compile-only coverage for blocking and advanced functions.
+// Compile-only coverage for the blocking function.
 if (false) {
     lastTestKey = a4MicroSystemAccess.waitForKey()
-    a4MicroSystemAccess.setDoorClosedLevel(a4MicroSystemAccess.DoorSensorLevel.High)
 }

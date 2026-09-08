@@ -25,8 +25,7 @@
         "docs/entered-code.md",
         "docs/clear-entered-code.md",
         "docs/entered-code-is.md",
-        "docs/delete-last-character.md",
-        "docs/set-door-closed-level.md"
+        "docs/delete-last-character.md"
     ],
     "testFiles": [
         "test.ts"
