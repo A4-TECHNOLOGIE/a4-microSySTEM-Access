@@ -36,4 +36,4 @@ Import the repository into MakeCode and download the included `test.ts` program.
 - code entry, length detection, comparison, clearing and last-digit deletion behave as documented;
 - no simulator exception occurs when the hardware is absent.
 
-The production model tested by A4 Technologie returns a low level on P0 when the door is closed.
+The production model tested by A4 Technologie returns a high level on P0 when the door is closed.
