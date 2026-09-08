@@ -16,6 +16,7 @@ namespace a4MicroSystemAccess {
     const maximumCodeLength = 16
 
     let keypadInitialized = false
+    let doorSensorInitialized = false
     let keypadEventSource = 0
     let keyQueue: string[] = []
     let enteredCode = ""
@@ -41,6 +42,12 @@ namespace a4MicroSystemAccess {
     function writeLockOutput(value: number): void {
         writeDfrRegister(c0ModeRegister, digitalOutputMode)
         writeDfrRegister(c0WriteRegister, value)
+    }
+
+    function initializeDoorSensor(): void {
+        if (doorSensorInitialized) return
+        doorSensorInitialized = true
+        pins.setPull(doorSensorPin, PinPullMode.PullUp)
     }
 
     function decodeKey(data: number): string {
@@ -125,6 +132,7 @@ namespace a4MicroSystemAccess {
     //% group="Door sensor"
     //% weight=100
     export function doorIs(state: DoorState): boolean {
+        initializeDoorSensor()
         const doorIsClosed = pins.digitalReadPin(doorSensorPin) == doorClosedLevel
         return state == DoorState.Closed ? doorIsClosed : !doorIsClosed
     }
