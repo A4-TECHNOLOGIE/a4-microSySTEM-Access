@@ -5,6 +5,8 @@
   "a4MicroSystemAccess.deleteLastCharacter": "Deletes the last digit from the entered access code.",
   "a4MicroSystemAccess.doorIs": "Returns true when the door is in the selected state.",
   "a4MicroSystemAccess.doorIs|param|state": "door state to test",
+  "a4MicroSystemAccess.enteredCodeHasLength": "Returns true when the entered access code contains the selected number of digits.",
+  "a4MicroSystemAccess.enteredCodeHasLength|param|length": "number of digits to test, from 1 to 16, eg: 4",
   "a4MicroSystemAccess.enteredCodeIs": "Returns true when the entered access code matches the given code.",
   "a4MicroSystemAccess.enteredCodeIs|param|code": "access code to compare, eg: \"1234\"",
   "a4MicroSystemAccess.getEnteredCode": "Returns the digits entered since the code was last cleared.\nThe star key clears the code and the hash key is not appended.",

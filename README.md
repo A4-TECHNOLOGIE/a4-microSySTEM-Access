@@ -106,8 +106,21 @@ The extension automatically stores numeric keys in a code of up to 16 digits. Th
 ```typescript
 a4MicroSystemAccess.getEnteredCode()
 a4MicroSystemAccess.enteredCodeIs("1234")
+a4MicroSystemAccess.enteredCodeHasLength(4)
 a4MicroSystemAccess.deleteLastCharacter()
 a4MicroSystemAccess.clearEnteredCode()
+```
+
+Use `enteredCodeHasLength()` to reject and clear an incorrect entry as soon as the expected number of digits has been entered:
+
+```typescript
+if (a4MicroSystemAccess.enteredCodeIs("1234")) {
+    // Access granted
+    a4MicroSystemAccess.clearEnteredCode()
+} else if (a4MicroSystemAccess.enteredCodeHasLength(4)) {
+    // Access denied
+    a4MicroSystemAccess.clearEnteredCode()
+}
 ```
 
 ## Example: four-digit access code

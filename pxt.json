@@ -23,6 +23,7 @@
         "docs/entered-code.md",
         "docs/clear-entered-code.md",
         "docs/entered-code-is.md",
+        "docs/entered-code-has-length.md",
         "docs/delete-last-character.md"
     ],
     "testFiles": [

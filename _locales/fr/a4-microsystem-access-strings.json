@@ -9,6 +9,8 @@
   "a4MicroSystemAccess.onKeyPressed|block": "lorsqu'une touche du clavier est appuyée",
   "a4MicroSystemAccess.getEnteredCode|block": "code saisi",
   "a4MicroSystemAccess.clearEnteredCode|block": "effacer le code saisi",
+  "a4MicroSystemAccess.enteredCodeHasLength|block": "le code saisi comporte %length chiffres",
+  "a4MicroSystemAccess.enteredCodeHasLength|param|length|defl": "4",
   "a4MicroSystemAccess.enteredCodeIs|block": "le code saisi est %code",
   "a4MicroSystemAccess.deleteLastCharacter|block": "effacer le dernier chiffre du code",
   "a4MicroSystemAccess|block": "A4 microSySTEM Access",

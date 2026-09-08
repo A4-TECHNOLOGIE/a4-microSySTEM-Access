@@ -10,6 +10,8 @@
   "a4MicroSystemAccess.onKeyPressed|param|handler": "code à exécuter ; touche contient le caractère appuyé",
   "a4MicroSystemAccess.getEnteredCode": "Renvoie les chiffres saisis depuis le dernier effacement. La touche étoile efface le code et la touche dièse n'est pas ajoutée.",
   "a4MicroSystemAccess.clearEnteredCode": "Efface tous les chiffres du code d'accès saisi.",
+  "a4MicroSystemAccess.enteredCodeHasLength": "Renvoie vrai lorsque le code d'accès saisi comporte le nombre de chiffres sélectionné.",
+  "a4MicroSystemAccess.enteredCodeHasLength|param|length": "nombre de chiffres à tester, de 1 à 16",
   "a4MicroSystemAccess.enteredCodeIs": "Renvoie vrai lorsque le code d'accès saisi correspond au code indiqué.",
   "a4MicroSystemAccess.enteredCodeIs|param|code": "code d'accès à comparer",
   "a4MicroSystemAccess.deleteLastCharacter": "Efface le dernier chiffre du code d'accès saisi."

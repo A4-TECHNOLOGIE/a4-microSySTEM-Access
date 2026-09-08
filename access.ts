@@ -225,6 +225,26 @@ namespace a4MicroSystemAccess {
     }
 
     /**
+     * Returns true when the entered access code contains the selected number of digits.
+     * @param length number of digits to test, from 1 to 16, eg: 4
+     */
+    //% blockId=a4_access_entered_code_has_length
+    //% help=github:a4-microsystem-access/docs/entered-code-has-length
+    //% block="entered code has %length digits"
+    //% length.defl=4 length.min=1 length.max=16
+    //% group="Access code"
+    //% weight=75
+    export function enteredCodeHasLength(length: number): boolean {
+        initializeKeypad()
+
+        let expectedLength = Math.round(length)
+        if (expectedLength < 1) expectedLength = 1
+        if (expectedLength > maximumCodeLength) expectedLength = maximumCodeLength
+
+        return enteredCode.length == expectedLength
+    }
+
+    /**
      * Deletes the last digit from the entered access code.
      */
     //% blockId=a4_access_delete_last_character

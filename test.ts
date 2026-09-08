@@ -30,7 +30,11 @@ a4MicroSystemAccess.onKeyPressed(function (key) {
         }
         a4MicroSystemAccess.clearEnteredCode()
     } else {
-        basic.showString(a4MicroSystemAccess.getEnteredCode())
+        if (a4MicroSystemAccess.enteredCodeHasLength(4)) {
+            basic.showString("4")
+        } else {
+            basic.showString(a4MicroSystemAccess.getEnteredCode())
+        }
     }
 })
 

@@ -4,6 +4,8 @@
   "a4MicroSystemAccess.clearEnteredCode|block": "clear entered code",
   "a4MicroSystemAccess.deleteLastCharacter|block": "delete last code digit",
   "a4MicroSystemAccess.doorIs|block": "door is %state",
+  "a4MicroSystemAccess.enteredCodeHasLength|block": "entered code has %length digits",
+  "a4MicroSystemAccess.enteredCodeHasLength|param|length|defl": "4",
   "a4MicroSystemAccess.enteredCodeIs|block": "entered code is %code",
   "a4MicroSystemAccess.enteredCodeIs|param|code|defl": "1234",
   "a4MicroSystemAccess.getEnteredCode|block": "entered code",
